@@ -5,15 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Alexandre Alcantara | Desenvolvedor Front-End</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link rel="icon" type="image/png" href="logoport.png" />
   </head>
   <body class="bg-gray-50 text-gray-800">
     <!-- Header -->
     <header class="bg-white shadow-md sticky top-0 z-10">
       <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
-        <div class="flex items-center gap-2">
-          <img src="logoport.png" alt="Logo" class="h-10 w-10 rounded-full" />
+        <div class="flex items-center space-x-2">
+          <img src="logoport.png" alt="Logo" class="h-8 w-8 rounded-full" />
           <h1 class="text-xl font-bold text-blue-600">Alexandre Alcantara</h1>
         </div>
         <nav class="space-x-4">
@@ -26,13 +26,16 @@
 
     <!-- Hero Section -->
     <section class="text-center py-20 bg-gradient-to-r from-blue-600 to-cyan-500 text-white">
-      <h2 class="text-4xl font-bold mb-2" data-aos="fade-down">Desenvolvedor Front-End</h2>
-      <p class="text-lg" data-aos="fade-up">Crio interfaces modernas, acessíveis e responsivas para a web</p>
-      <a href="#contato" class="mt-6 inline-block bg-white text-blue-600 font-semibold px-6 py-2 rounded-full shadow hover:bg-gray-100 transition" data-aos="zoom-in">Fale comigo</a>
+      <div class="flex flex-col items-center justify-center">
+        <img src="logoport.png" alt="Logo" class="w-24 h-24 rounded-full mb-4 shadow-lg animate-bounce" />
+        <h2 class="text-4xl font-bold mb-2">Desenvolvedor Front-End</h2>
+        <p class="text-lg">Crio interfaces modernas, acessíveis e responsivas para a web</p>
+        <a href="#contato" class="mt-6 inline-block bg-white text-blue-600 font-semibold px-6 py-2 rounded-full shadow hover:bg-gray-100 transition">Fale comigo</a>
+      </div>
     </section>
 
     <!-- Sobre -->
-    <section id="sobre" class="max-w-4xl mx-auto px-6 py-16" data-aos="fade-up">
+    <section id="sobre" class="max-w-4xl mx-auto px-6 py-16">
       <h2 class="text-2xl font-bold mb-4">Sobre mim</h2>
       <p class="leading-relaxed">
         Sou desenvolvedor front-end apaixonado por criar experiências digitais agradáveis. Tenho foco em HTML, CSS, JavaScript, Tailwind e React, buscando sempre boas práticas e performance. Estou aberto a trabalhos freelancers e oportunidades para complementar minha renda com projetos web.
@@ -42,19 +45,19 @@
     <!-- Projetos -->
     <section id="projetos" class="bg-white py-16">
       <div class="max-w-6xl mx-auto px-6">
-        <h2 class="text-2xl font-bold mb-6" data-aos="fade-right">Projetos Recentes</h2>
+        <h2 class="text-2xl font-bold mb-6">Projetos Recentes</h2>
         <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          <div class="bg-gray-100 rounded-lg shadow p-4 hover:scale-105 transform transition duration-300" data-aos="flip-left">
+          <div class="bg-gray-100 rounded-lg shadow p-4 hover:shadow-lg transition">
             <h3 class="font-semibold text-lg mb-2">Sistema de Ponto</h3>
             <p>Aplicativo web  para registro de ponto. Desenvolvido em PHP + JavaScript.</p>
             <a href="#" class="text-blue-600 inline-block mt-2">Ver projeto</a>
           </div>
-          <div class="bg-gray-100 rounded-lg shadow p-4 hover:scale-105 transform transition duration-300" data-aos="flip-left">
+          <div class="bg-gray-100 rounded-lg shadow p-4 hover:shadow-lg transition">
             <h3 class="font-semibold text-lg mb-2">Landing Page Institucional</h3>
             <p>Página responsiva com foco em conversão, usando Tailwind e animações com AOS.js.</p>
             <a href="#" class="text-blue-600 inline-block mt-2">Ver projeto</a>
           </div>
-          <div class="bg-gray-100 rounded-lg shadow p-4 hover:scale-105 transform transition duration-300" data-aos="flip-left">
+          <div class="bg-gray-100 rounded-lg shadow p-4 hover:shadow-lg transition">
             <h3 class="font-semibold text-lg mb-2">Portfólio GitHub Pages</h3>
             <p>Site pessoal publicado com GitHub Pages e domínio gratuito.</p>
             <a href="#" class="text-blue-600 inline-block mt-2">Ver projeto</a>
@@ -64,7 +67,7 @@
     </section>
 
     <!-- Contato -->
-    <section id="contato" class="max-w-4xl mx-auto px-6 py-16" data-aos="fade-up">
+    <section id="contato" class="max-w-4xl mx-auto px-6 py-16">
       <h2 class="text-2xl font-bold mb-4">Contato</h2>
       <p class="mb-2">Vamos conversar sobre seu projeto? Estou disponível para freelas!</p>
       <ul class="space-y-2">
@@ -79,9 +82,5 @@
     <footer class="text-center text-sm text-gray-500 py-6 border-t">
       © 2025 Alexandre Alcantara. Todos os direitos reservados.
     </footer>
-
-    <!-- Scripts -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>AOS.init();</script>
   </body>
 </html>
