@@ -6,78 +6,83 @@
     <title>Alexandre Alcantara | Desenvolvedor Front-End</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   </head>
-  <body class="bg-gradient-to-br from-blue-700 via-blue-500 to-cyan-400 text-gray-100">
+  <body class="bg-gradient-to-r from-blue-600 via-blue-500 to-cyan-500 text-gray-100">
     <!-- Header -->
-    <header class="bg-white text-blue-700 shadow-lg sticky top-0 z-10">
+    <header class="bg-white bg-opacity-20 backdrop-blur-md shadow-md sticky top-0 z-10">
       <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
-        <h1 class="text-xl font-bold">Alexandre Alcantara</h1>
-        <nav class="space-x-4">
-          <a href="#sobre" class="hover:underline">Sobre</a>
-          <a href="#projetos" class="hover:underline">Projetos</a>
-          <a href="#contato" class="hover:underline">Contato</a>
+        <div class="flex items-center gap-3">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" alt="Logo" class="w-10 h-10">
+          <h1 class="text-xl font-bold text-white">Alexandre Alcantara</h1>
+        </div>
+        <nav class="space-x-4 text-white">
+          <a href="#sobre" class="hover:text-cyan-200 transition">Sobre</a>
+          <a href="#projetos" class="hover:text-cyan-200 transition">Projetos</a>
+          <a href="#contato" class="hover:text-cyan-200 transition">Contato</a>
         </nav>
       </div>
     </header>
 
     <!-- Hero Section -->
-    <section class="text-center py-20 bg-gradient-to-r from-blue-700 to-cyan-500 text-white">
-      <h2 class="text-5xl font-extrabold mb-4" data-aos="fade-down">Desenvolvedor Front-End</h2>
-      <p class="text-lg" data-aos="fade-up">Crio interfaces modernas, acessíveis e responsivas para a web</p>
-      <a href="#contato" class="mt-6 inline-block bg-white text-blue-700 font-semibold px-6 py-2 rounded-full shadow hover:bg-gray-100 transition" data-aos="zoom-in">Fale comigo</a>
+    <section class="text-center py-20" data-aos="fade-up">
+      <h2 class="text-5xl font-extrabold mb-4 drop-shadow-md">Desenvolvedor Front-End</h2>
+      <p class="text-lg mb-6">Crio interfaces modernas, acessíveis e responsivas para a web</p>
+      <a href="#contato" class="inline-block bg-white text-blue-600 font-semibold px-6 py-2 rounded-full shadow hover:bg-gray-100 transition">Fale comigo</a>
     </section>
 
     <!-- Sobre -->
-    <section id="sobre" class="max-w-4xl mx-auto px-6 py-16">
-      <h2 class="text-3xl font-bold mb-6 text-white" data-aos="fade-right">Sobre mim</h2>
-      <p class="leading-relaxed text-white" data-aos="fade-left">
+    <section id="sobre" class="max-w-4xl mx-auto px-6 py-16" data-aos="fade-up">
+      <h2 class="text-3xl font-bold mb-4">Sobre mim</h2>
+      <p class="leading-relaxed text-white/90">
         Sou desenvolvedor front-end apaixonado por criar experiências digitais agradáveis. Tenho foco em HTML, CSS, JavaScript, Tailwind e React, buscando sempre boas práticas e performance. Estou aberto a trabalhos freelancers e oportunidades para complementar minha renda com projetos web.
       </p>
     </section>
 
     <!-- Projetos -->
-    <section id="projetos" class="bg-white py-20 text-gray-800">
+    <section id="projetos" class="bg-white text-gray-800 py-16" data-aos="fade-up">
       <div class="max-w-6xl mx-auto px-6">
-        <h2 class="text-3xl font-bold mb-10" data-aos="fade-up">Projetos Recentes</h2>
-        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
-          <div class="bg-gray-100 rounded-lg shadow p-6 hover:shadow-lg transition" data-aos="zoom-in">
-            <h3 class="font-semibold text-xl mb-2">Sistema de Ponto</h3>
+        <h2 class="text-3xl font-bold mb-6 text-center">Projetos Recentes</h2>
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div class="bg-gray-100 rounded-lg shadow p-4 hover:shadow-xl transition duration-300" data-aos="fade-up">
+            <h3 class="font-semibold text-lg mb-2">Sistema de Ponto</h3>
             <p>Aplicativo web para registro de ponto. Desenvolvido em PHP + JavaScript.</p>
-            <a href="#" class="text-blue-600 inline-block mt-3">Ver projeto</a>
+            <a href="#" class="text-blue-600 inline-block mt-2">Ver projeto</a>
           </div>
-          <div class="bg-gray-100 rounded-lg shadow p-6 hover:shadow-lg transition" data-aos="zoom-in">
-            <h3 class="font-semibold text-xl mb-2">Landing Page Institucional</h3>
+          <div class="bg-gray-100 rounded-lg shadow p-4 hover:shadow-xl transition duration-300" data-aos="fade-up">
+            <h3 class="font-semibold text-lg mb-2">Landing Page Institucional</h3>
             <p>Página responsiva com foco em conversão, usando Tailwind e animações com AOS.js.</p>
-            <a href="#" class="text-blue-600 inline-block mt-3">Ver projeto</a>
+            <a href="#" class="text-blue-600 inline-block mt-2">Ver projeto</a>
           </div>
-          <div class="bg-gray-100 rounded-lg shadow p-6 hover:shadow-lg transition" data-aos="zoom-in">
-            <h3 class="font-semibold text-xl mb-2">Portfólio GitHub Pages</h3>
+          <div class="bg-gray-100 rounded-lg shadow p-4 hover:shadow-xl transition duration-300" data-aos="fade-up">
+            <h3 class="font-semibold text-lg mb-2">Portfólio GitHub Pages</h3>
             <p>Site pessoal publicado com GitHub Pages e domínio gratuito.</p>
-            <a href="#" class="text-blue-600 inline-block mt-3">Ver projeto</a>
+            <a href="#" class="text-blue-600 inline-block mt-2">Ver projeto</a>
           </div>
         </div>
       </div>
     </section>
 
     <!-- Contato -->
-    <section id="contato" class="max-w-4xl mx-auto px-6 py-20">
-      <h2 class="text-3xl font-bold mb-6 text-white" data-aos="fade-up">Contato</h2>
-      <p class="mb-4 text-white">Vamos conversar sobre seu projeto? Estou disponível para freelas!</p>
-      <ul class="space-y-3 text-white">
-        <li><i class="ph-envelope text-blue-300"></i> Email: <a href="mailto:alxntc@hotmail.com" class="underline">alxntc@hotmail.com</a></li>
-        <li><i class="ph-linkedin-logo text-blue-300"></i> <a href="https://linkedin.com/in/alexandre-alcantara-aaaa7921b" class="underline">LinkedIn</a></li>
-        <li><i class="ph-whatsapp-logo text-green-400"></i> WhatsApp: <a href="https://wa.me/5541995488274" class="underline">Fale direto comigo</a></li>
+    <section id="contato" class="max-w-4xl mx-auto px-6 py-16" data-aos="fade-up">
+      <h2 class="text-3xl font-bold mb-4">Contato</h2>
+      <p class="mb-2 text-white/90">Vamos conversar sobre seu projeto? Estou disponível para freelas!</p>
+      <ul class="space-y-2">
+        <li><i class="ph-envelope text-white"></i> Email: <a href="mailto:alxntc@hotmail.com" class="text-white underline">alxntc@hotmail.com</a></li>
+        <li><i class="ph-linkedin-logo text-white"></i> <a href="https://linkedin.com/in/alexandre-alcantara-aaaa7921b" class="text-white underline">LinkedIn</a></li>
+        <li><i class="ph-whatsapp-logo text-green-400"></i> WhatsApp: <a href="https://wa.me/5541995488274" class="text-white underline">Fale direto comigo</a></li>
       </ul>
-      <a href="#" class="mt-6 inline-block bg-blue-600 text-white px-5 py-2 rounded-full hover:bg-blue-700 transition">Baixar CV</a>
+      <a href="#" class="mt-6 inline-block bg-white text-blue-600 px-4 py-2 rounded hover:bg-gray-100">Baixar CV</a>
     </section>
 
     <!-- Footer -->
-    <footer class="text-center text-sm text-gray-300 py-6 border-t border-gray-400">
+    <footer class="text-center text-sm text-white/70 py-6 border-t border-white/20">
       © 2025 Alexandre Alcantara. Todos os direitos reservados.
     </footer>
 
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>AOS.init();</script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
