@@ -1,66 +1,56 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Inter', sans-serif;
-}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alexandre Alcantara | Desenvolvedor Front-End</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body class="bg-gray-100 text-gray-900">
 
-body {
-  background: linear-gradient(to right, #004080, #00aaff);
-  color: #fff;
-  line-height: 1.6;
-  padding: 20px;
-}
+  <!-- Header -->
+  <header class="bg-white shadow-md p-6 text-center">
+    <img src="https://avatars.githubusercontent.com/u/148449999?v=4" alt="Foto de Alexandre" class="w-28 h-28 rounded-full mx-auto border-4 border-blue-500">
+    <h1 class="text-3xl font-bold mt-4">Alexandre Alcantara</h1>
+    <p class="text-blue-600 font-semibold">Desenvolvedor Front-End | Python | Segurança da Informação</p>
+    <div class="flex justify-center mt-4 space-x-4">
+      <a href="https://www.linkedin.com/in/alexandre-alcantara-aaaa7921b" target="_blank" class="text-blue-600 hover:text-blue-800"><i class="fab fa-linkedin fa-lg"></i></a>
+      <a href="https://github.com/xAlxS" target="_blank" class="text-gray-700 hover:text-black"><i class="fab fa-github fa-lg"></i></a>
+    </div>
+  </header>
 
-header {
-  text-align: center;
-  margin-bottom: 40px;
-}
+  <!-- Sobre -->
+  <section class="p-8 bg-white mt-6 max-w-3xl mx-auto rounded-xl shadow">
+    <h2 class="text-2xl font-bold text-blue-700 mb-4">Sobre mim</h2>
+    <p>Sou apaixonado por desenvolvimento front-end, com foco em criar experiências modernas, acessíveis e funcionais. Tenho conhecimento em HTML, CSS, JavaScript, PHP, Python e segurança da informação, além de experiência com ferramentas como Git, GitHub e frameworks web.</p>
+  </section>
 
-header h1 {
-  font-size: 36px;
-  font-weight: 800;
-}
+  <!-- Projetos -->
+  <section class="p-8 mt-6 max-w-3xl mx-auto bg-white rounded-xl shadow">
+    <h2 class="text-2xl font-bold text-blue-700 mb-4">Projetos</h2>
+    <ul class="space-y-4">
+      <li>
+        <h3 class="text-xl font-semibold">Sistema de Registro de Acesso com Reconhecimento Facial</h3>
+        <p class="text-sm text-gray-600">PHP + JavaScript + integração com MediaPipe e Firebase.</p>
+      </li>
+      <li>
+        <h3 class="text-xl font-semibold">Portfólio Profissional com GitHub Pages</h3>
+        <p class="text-sm text-gray-600">Este site que você está visitando 🎯</p>
+      </li>
+    </ul>
+  </section>
 
-header p {
-  font-size: 18px;
-  font-weight: 400;
-  margin-top: 10px;
-}
+  <!-- Contato -->
+  <section class="p-8 mt-6 max-w-3xl mx-auto bg-white rounded-xl shadow mb-10">
+    <h2 class="text-2xl font-bold text-blue-700 mb-4">Contato</h2>
+    <p>Entre em contato comigo pelo LinkedIn ou GitHub. Estou aberto a oportunidades freelance e projetos de colaboração!</p>
+  </section>
 
-section.portfolio {
-  text-align: center;
-}
+  <!-- Footer -->
+  <footer class="text-center text-sm text-gray-600 py-4">
+    © <?= date('Y') ?> Alexandre Alcantara. Todos os direitos reservados.
+  </footer>
 
-.portfolio h2 {
-  font-size: 28px;
-  margin-bottom: 20px;
-}
-
-.projects {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  align-items: center;
-}
-
-.card {
-  background-color: rgba(255, 255, 255, 0.1);
-  padding: 20px;
-  width: 100%;
-  max-width: 500px;
-  border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-}
-
-.card h3 {
-  font-size: 20px;
-  font-weight: 600;
-}
-
-footer {
-  margin-top: 50px;
-  text-align: center;
-  font-size: 14px;
-  color: #ccc;
-}
+</body>
+</html>
