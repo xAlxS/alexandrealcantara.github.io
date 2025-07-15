@@ -5,61 +5,75 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Alexandre Alcantara | Desenvolvedor Front-End</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
   </head>
-  <body class="bg-gray-100 text-gray-800">
-
+  <body class="bg-gray-50 text-gray-800">
     <!-- Header -->
-    <header class="bg-white shadow-md p-4 sticky top-0 z-10">
-      <div class="max-w-6xl mx-auto flex justify-between items-center">
+    <header class="bg-white shadow-md sticky top-0 z-10">
+      <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
         <h1 class="text-xl font-bold text-blue-600">Alexandre Alcantara</h1>
-        <nav>
-          <a href="#sobre" class="mx-2 hover:text-blue-600">Sobre</a>
-          <a href="#projetos" class="mx-2 hover:text-blue-600">Projetos</a>
-          <a href="#contato" class="mx-2 hover:text-blue-600">Contato</a>
+        <nav class="space-x-4">
+          <a href="#sobre" class="hover:text-blue-600">Sobre</a>
+          <a href="#projetos" class="hover:text-blue-600">Projetos</a>
+          <a href="#contato" class="hover:text-blue-600">Contato</a>
         </nav>
       </div>
     </header>
 
+    <!-- Hero Section -->
+    <section class="text-center py-16 bg-gradient-to-r from-blue-500 to-cyan-500 text-white">
+      <h2 class="text-4xl font-bold mb-2">Desenvolvedor Front-End</h2>
+      <p class="text-lg">Crio interfaces modernas, acessíveis e responsivas para a web</p>
+      <a href="#contato" class="mt-6 inline-block bg-white text-blue-600 font-semibold px-6 py-2 rounded-full shadow hover:bg-gray-100 transition">Fale comigo</a>
+    </section>
+
     <!-- Sobre -->
-    <section id="sobre" class="max-w-6xl mx-auto p-8">
+    <section id="sobre" class="max-w-4xl mx-auto px-6 py-16">
       <h2 class="text-2xl font-bold mb-4">Sobre mim</h2>
-      <p>
-        Sou desenvolvedor Front-End com foco em criação de interfaces modernas, acessíveis e responsivas.
-        Tenho experiência com HTML, CSS, JavaScript e ferramentas modernas como React e TailwindCSS.
+      <p class="leading-relaxed">
+        Sou desenvolvedor front-end apaixonado por criar experiências digitais agradáveis. Tenho foco em HTML, CSS, JavaScript, Tailwind e React, buscando sempre boas práticas e performance. Estou aberto a trabalhos freelancers e oportunidades para complementar minha renda com projetos web.
       </p>
     </section>
 
     <!-- Projetos -->
-    <section id="projetos" class="bg-white py-12">
-      <div class="max-w-6xl mx-auto p-8">
-        <h2 class="text-2xl font-bold mb-4">Projetos</h2>
-        <div class="grid md:grid-cols-2 gap-6">
-          <div class="bg-gray-100 p-4 rounded-lg shadow">
-            <h3 class="font-semibold text-lg">Projeto 1</h3>
-            <p>Descrição breve do projeto.</p>
-            <a href="#" class="text-blue-600 mt-2 inline-block">Ver mais</a>
+    <section id="projetos" class="bg-white py-16">
+      <div class="max-w-6xl mx-auto px-6">
+        <h2 class="text-2xl font-bold mb-6">Projetos Recentes</h2>
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div class="bg-gray-100 rounded-lg shadow p-4 hover:shadow-lg transition">
+            <h3 class="font-semibold text-lg mb-2">Sistema de Ponto</h3>
+            <p>Aplicativo web  para registro de ponto. Desenvolvido em PHP + JavaScript.</p>
+            <a href="#" class="text-blue-600 inline-block mt-2">Ver projeto</a>
           </div>
-          <div class="bg-gray-100 p-4 rounded-lg shadow">
-            <h3 class="font-semibold text-lg">Projeto 2</h3>
-            <p>Outro exemplo de trabalho front-end.</p>
-            <a href="#" class="text-blue-600 mt-2 inline-block">Ver mais</a>
+          <div class="bg-gray-100 rounded-lg shadow p-4 hover:shadow-lg transition">
+            <h3 class="font-semibold text-lg mb-2">Landing Page Institucional</h3>
+            <p>Página responsiva com foco em conversão, usando Tailwind e animações com AOS.js.</p>
+            <a href="#" class="text-blue-600 inline-block mt-2">Ver projeto</a>
+          </div>
+          <div class="bg-gray-100 rounded-lg shadow p-4 hover:shadow-lg transition">
+            <h3 class="font-semibold text-lg mb-2">Portfólio GitHub Pages</h3>
+            <p>Site pessoal publicado com GitHub Pages e domínio gratuito.</p>
+            <a href="#" class="text-blue-600 inline-block mt-2">Ver projeto</a>
           </div>
         </div>
       </div>
     </section>
 
     <!-- Contato -->
-    <section id="contato" class="max-w-6xl mx-auto p-8">
+    <section id="contato" class="max-w-4xl mx-auto px-6 py-16">
       <h2 class="text-2xl font-bold mb-4">Contato</h2>
-      <p>📧 Email: alxntc@hotmail.com</p>
-      <p>🔗 LinkedIn: <a href="https://linkedin.com/in/alexandre-alcantara-aaaa7921b" class="text-blue-600">Meu perfil</a></p>
-      <a href="#" class="mt-4 inline-block bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Baixar CV</a>
+      <p class="mb-2">Vamos conversar sobre seu projeto? Estou disponível para freelas!</p>
+      <ul class="space-y-2">
+        <li><i class="ph-envelope text-blue-600"></i> Email: <a href="mailto:alxntc@hotmail.com" class="text-blue-600">alxntc@hotmail.com</a></li>
+        <li><i class="ph-linkedin-logo text-blue-600"></i> <a href="https://linkedin.com/in/alexandre-alcantara-aaaa7921b" class="text-blue-600">LinkedIn</a></li>
+        <li><i class="ph-whatsapp-logo text-green-500"></i> WhatsApp: <a href="https://wa.me/5599999999999" class="text-blue-600">Fale direto comigo</a></li>
+      </ul>
+      <a href="#" class="mt-6 inline-block bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Baixar CV</a>
     </section>
 
     <!-- Footer -->
-    <footer class="text-center text-sm text-gray-500 py-6 mt-12 border-t">
+    <footer class="text-center text-sm text-gray-500 py-6 border-t">
       © 2025 Alexandre Alcantara. Todos os direitos reservados.
     </footer>
-
   </body>
 </html>
