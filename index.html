@@ -12,14 +12,34 @@
       html {
         scroll-behavior: smooth;
       }
+      body {
+        background: radial-gradient(circle at center, #111 0%, #000 100%);
+      }
+      .typing::after {
+        content: '|';
+        animation: blink 1s infinite;
+      }
+      @keyframes blink {
+        0%, 50%, 100% { opacity: 1; }
+        25%, 75% { opacity: 0; }
+      }
+      @keyframes neonGlow {
+        0%, 100% {
+          text-shadow: 0 0 10px #fff, 0 0 20px #fff;
+        }
+        50% {
+          text-shadow: 0 0 20px #00f, 0 0 30px #0ff;
+        }
+      }
     </style>
   </head>
-  <body class="bg-black text-white">
+  <body class="text-white">
     <!-- Header -->
     <header class="bg-zinc-900 shadow-md sticky top-0 z-10">
       <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
         <div class="flex items-center space-x-2">
-          <h1 class="text-xl font-bold text-white">Alexandre Alcantara</h1>
+          <img src="logo_bw.png" alt="Logo" class="w-10 h-10 rounded-full" />
+          <h1 class="text-xl font-bold text-white animate-pulse">Alexandre Alcantara</h1>
         </div>
         <nav class="space-x-4 text-zinc-300">
           <a href="#sobre" class="hover:text-white">Sobre</a>
@@ -30,11 +50,11 @@
     </header>
 
     <!-- Hero Section -->
-    <section class="text-center py-20 bg-zinc-800 text-white">
+    <section class="text-center py-20 bg-black text-white">
       <div class="flex justify-center mb-6" data-aos="zoom-in">
         <img src="logo_bw.png" alt="Logo" class="w-48 h-48" />
       </div>
-      <h2 class="text-4xl font-bold mb-2" data-aos="fade-up">Desenvolvedor Front-End</h2>
+      <h2 class="text-4xl font-bold mb-2 typing" style="animation: neonGlow 2s ease-in-out infinite;">Desenvolvedor Front-End</h2>
       <p class="text-lg text-zinc-300" data-aos="fade-up" data-aos-delay="100">
         Crio interfaces modernas, acessíveis e responsivas para a web
       </p>
