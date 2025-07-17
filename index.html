@@ -18,23 +18,22 @@
         color: #fff;
         text-shadow: 0 0 5px #0ff, 0 0 10px #0ff, 0 0 20px #0ff;
       }
-      .typewriter-container {
+      .typewriter {
         display: inline-block;
         overflow: hidden;
         border-right: 2px solid #0ff;
         white-space: nowrap;
-        animation: typing 3s steps(30, end), blink-caret 0.7s step-end infinite;
-        width: 0;
-        animation-fill-mode: forwards;
+        letter-spacing: 0.15em;
+        animation: typing 3s steps(30, end) 1 normal both, blink-caret .75s step-end infinite;
       }
 
       @keyframes typing {
         from { width: 0 }
-        to { width: 24ch }
+        to { width: 27ch }
       }
 
       @keyframes blink-caret {
-        from, to { border-color: transparent }
+        0%, 100% { border-color: transparent }
         50% { border-color: #0ff; }
       }
     </style>
@@ -60,10 +59,8 @@
       <div class="flex justify-center mb-6" data-aos="zoom-in">
         <img src="20250711_1013_Web Developer Portrait_remix_01jzwsrv0bft3thvk02qkc613b.png" alt="Logo" class="w-72 h-72 drop-shadow-[0_0_20px_#0ff]" />
       </div>
-      <div class="flex justify-center">
-        <span class="typewriter-container">
-          <span class="typewriter neon-text">Desenvolvedor Front-End</span>
-        </span>
+      <div class="text-center">
+        <span class="typewriter neon-text">Desenvolvedor Front-End</span>
       </div>
       <p class="text-lg mt-4 text-gray-300" data-aos="fade-up" data-aos-delay="100">Crio interfaces modernas, acessíveis e responsivas para a web</p>
       <a href="#contato" class="mt-6 inline-block bg-cyan-500 text-white font-semibold px-6 py-2 rounded-full shadow hover:bg-cyan-400 transition" data-aos="fade-up" data-aos-delay="200">Fale comigo</a>
