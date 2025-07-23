@@ -1,121 +1,23 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Alexandre Alcantara | Desenvolvedor Front-End</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <script src="https://unpkg.com/@phosphor-icons/web"></script>
-    <style>
-      html {
-        scroll-behavior: smooth;
-      }
-      .neon-text {
-        font-size: 2rem;
-        font-weight: bold;
-        color: #fff;
-        text-shadow: 0 0 5px #0ff, 0 0 10px #0ff, 0 0 20px #0ff;
-      }
-      .typewriter {
-        display: inline-block;
-        overflow: hidden;
-        border-right: 2px solid #0ff;
-        white-space: nowrap;
-        letter-spacing: 0.15em;
-        animation: typing 3s steps(30, end) 1 normal both, blink-caret .75s step-end infinite;
-      }
-
-      @keyframes typing {
-        from { width: 0 }
-        to { width: 27ch }
-      }
-
-      @keyframes blink-caret {
-        0%, 100% { border-color: transparent }
-        50% { border-color: #0ff; }
-      }
-    </style>
-  </head>
-  <body class="bg-black text-white">
-    <!-- Header -->
-    <header class="bg-black shadow-md sticky top-0 z-10 border-b border-gray-800">
-      <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
-        <div class="flex items-center space-x-2">
-          <h1 class="text-xl font-bold text-white">Alexandre Alcantara</h1>
-        </div>
-        <nav class="space-x-4">
-          <a href="#sobre" class="hover:text-cyan-400">Sobre</a>
-          <a href="#projetos" class="hover:text-cyan-400">Projetos</a>
-          <a href="#contato" class="hover:text-cyan-400">Contato</a>
-        </nav>
-      </div>
-    </header>
-
-    <!-- Hero Section -->
-    <section class="text-center py-20 bg-black">
-      <div class="flex justify-center mb-6" data-aos="zoom-in">
-        <img src="logo_bw.png" alt="Logo" class="w-72 h-72 drop-shadow-[0_0_20px_#0ff]" />
-      </div>
-      <div class="text-center">
-        <span class="typewriter neon-text">Desenvolvedor Front-End</span>
-      </div>
-      <p class="text-lg mt-4 text-gray-300" data-aos="fade-up" data-aos-delay="100">Crio interfaces modernas, acessíveis e responsivas para a web</p>
-      <a href="#contato" class="mt-6 inline-block bg-cyan-500 text-white font-semibold px-6 py-2 rounded-full shadow hover:bg-cyan-400 transition" data-aos="fade-up" data-aos-delay="200">Fale comigo</a>
-    </section>
-
-    <!-- Sobre -->
-    <section id="sobre" class="max-w-4xl mx-auto px-6 py-16" data-aos="fade-up">
-      <h2 class="text-2xl font-bold mb-4">Sobre mim</h2>
-      <p class="leading-relaxed text-gray-300">
-        Sou desenvolvedor front-end apaixonado por criar experiências digitais agradáveis. Tenho foco em HTML, CSS, JavaScript, Tailwind e React, buscando sempre boas práticas e performance. Estou aberto a trabalhos freelancers e oportunidades para complementar minha renda com projetos web.
-      </p>
-    </section>
-
-    <!-- Projetos -->
-    <section id="projetos" class="bg-gray-900 py-16" data-aos="fade-up">
-      <div class="max-w-6xl mx-auto px-6">
-        <h2 class="text-2xl font-bold mb-6">Projetos Recentes</h2>
-        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          <div class="bg-gray-800 rounded-lg shadow p-4 hover:shadow-lg transition">
-            <h3 class="font-semibold text-lg mb-2">Sistema de Ponto</h3>
-            <p>Aplicativo web para registro de ponto. Desenvolvido em PHP + JavaScript.</p>
-            <a href="#" class="text-cyan-400 inline-block mt-2">Ver projeto</a>
-          </div>
-          <div class="bg-gray-800 rounded-lg shadow p-4 hover:shadow-lg transition">
-            <h3 class="font-semibold text-lg mb-2">Landing Page Institucional</h3>
-            <p>Página responsiva com foco em conversão, usando Tailwind e animações com AOS.js.</p>
-            <a href="#" class="text-cyan-400 inline-block mt-2">Ver projeto</a>
-          </div>
-          <div class="bg-gray-800 rounded-lg shadow p-4 hover:shadow-lg transition">
-            <h3 class="font-semibold text-lg mb-2">Portfólio GitHub Pages</h3>
-            <p>Site pessoal publicado com GitHub Pages e domínio gratuito.</p>
-            <a href="#" class="text-cyan-400 inline-block mt-2">Ver projeto</a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Contato -->
-    <section id="contato" class="max-w-4xl mx-auto px-6 py-16" data-aos="fade-up">
-      <h2 class="text-2xl font-bold mb-4">Contato</h2>
-      <p class="mb-2 text-gray-300">Vamos conversar sobre seu projeto? Estou disponível para freelas!</p>
-      <ul class="space-y-2">
-        <li><i class="ph-envelope text-cyan-400"></i> Email: <a href="mailto:alxntc@hotmail.com" class="text-cyan-400">alxntc@hotmail.com</a></li>
-        <li><i class="ph-linkedin-logo text-cyan-400"></i> <a href="https://linkedin.com/in/alexandre-alcantara-aaaa7921b" class="text-cyan-400">LinkedIn</a></li>
-        <li><i class="ph-whatsapp-logo text-green-500"></i> WhatsApp: <a href="https://wa.me/5541995488274" class="text-cyan-400">Fale direto comigo</a></li>
-      </ul>
-      <a href="#" class="mt-6 inline-block bg-cyan-500 text-white px-4 py-2 rounded hover:bg-cyan-600">Baixar CV</a>
-    </section>
-
-    <!-- Footer -->
-    <footer class="text-center text-sm text-gray-500 py-6 border-t border-gray-800">
-      © 2025 Alexandre Alcantara. Todos os direitos reservados.
-    </footer>
-
-    <script>
-      AOS.init();
-    </script>
-  </body>
-</html>
+<head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Jogo do Tigrinho V5</title><link rel="stylesheet" href="style.css"/></head>
+<body>
+<div class="container">
+<h1>🐯 Jogo do Tigrinho</h1>
+<p>🎟️ Fichas: <span id="fichas">10</span></p>
+<div class="machine">
+<div class="slot">
+<div class="reel" id="reel1"></div>
+<div class="reel" id="reel2"></div>
+<div class="reel" id="reel3"></div>
+</div>
+<img src="assets/alavanca.png" class="alavanca" id="alavanca" onclick="puxarAlavanca()" />
+</div>
+<p id="mensagem">Puxe a alavanca para girar!</p>
+<audio id="som-spin" src="assets/spin.mp3"></audio>
+<audio id="som-win" src="assets/win.mp3"></audio>
+<audio id="som-lose" src="assets/lose.mp3"></audio>
+<audio id="som-alavanca" src="assets/alavanca.mp3"></audio>
+</div><script src="script.js"></script>
+</body></html>
